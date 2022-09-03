@@ -13,20 +13,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.google.firebase.firestore.FirebaseFirestore
 import com.learn.bookreader.ui.theme.BookReaderTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             BookReaderTheme {
-                val db=FirebaseFirestore.getInstance()
-                val user:MutableMap<String,Any> = HashMap()
-                user["first name"]="mohnish"
 
-                db.collection("users")
-                    .add(user)
-                    .addOnSuccessListener { Log.d("FB","successful") }
-                    .addOnFailureListener{}
             }
         }
     }
