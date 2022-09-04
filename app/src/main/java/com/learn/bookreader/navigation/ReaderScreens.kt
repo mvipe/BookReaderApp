@@ -1,7 +1,7 @@
 package com.learn.bookreader.navigation
 
 import com.learn.bookreader.screens.details.BookDetailScreen
-import com.learn.bookreader.screens.details.BookDetailsScreen
+
 import com.learn.bookreader.screens.home.ReaderHomeScreen
 import java.lang.IllegalArgumentException
 
@@ -13,7 +13,7 @@ enum class ReaderScreens{
     SearchScreen,
     DetailsScreen,
     UpdateScreen,
-    ReaderStatsScreen,
+    ReaderStatsScreen;
 
 
     companion object {

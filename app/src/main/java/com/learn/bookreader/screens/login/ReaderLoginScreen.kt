@@ -1,9 +1,10 @@
 package com.learn.bookreader.screens.login
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
 
 
-    @Composable
-    fun ReaderLoginScreen() {
+@Composable
+    fun ReaderLoginScreen(navController: NavHostController) {
 
     }

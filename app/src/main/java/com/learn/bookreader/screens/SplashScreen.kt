@@ -1,5 +1,7 @@
 package com.learn.bookreader.screens
 
-class SplashScreen {
+import androidx.navigation.NavHostController
+
+class SplashScreen(navController: NavHostController) {
 
 }

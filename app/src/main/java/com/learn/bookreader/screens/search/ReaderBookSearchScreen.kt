@@ -1,8 +1,9 @@
 package com.learn.bookreader.screens.search
 
 import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
 
 @Composable
-fun ReaderSearcScreen(){
+fun ReaderSearcScreen(navController: NavHostController){
 
 }
