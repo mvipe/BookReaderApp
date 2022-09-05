@@ -22,6 +22,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
+import com.learn.bookreader.components.ReaderLogoText
+import com.learn.bookreader.navigation.ReaderScreens
 import kotlinx.coroutines.delay
 
 @Preview
@@ -39,6 +41,7 @@ fun SplashScreen(navController: NavController=NavController(context = LocalConte
                 }))
 
         delay(2000L)
+        navController.navigate(ReaderScreens.LoginScreen.name)
     }
     
     
@@ -54,8 +57,7 @@ fun SplashScreen(navController: NavController=NavController(context = LocalConte
         Column(modifier = Modifier.padding(1.dp)
             , horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
-        Text(text = "Book Reader", style = MaterialTheme.typography.headlineMedium
-        , color = Color.Red.copy(alpha = 0.5f))
+        ReaderLogoText()
             
             Spacer(modifier = Modifier.height(15.dp))
             
@@ -66,3 +68,4 @@ fun SplashScreen(navController: NavController=NavController(context = LocalConte
 
     }
 }
+
